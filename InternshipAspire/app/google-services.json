@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "435627180433",
+    "project_id": "login-register-firebase-35236",
+    "storage_bucket": "login-register-firebase-35236.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435627180433:android:f64a4813f88a518a68da30",
+        "android_client_info": {
+          "package_name": "com.example.application.internshipaspire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpsVt1rgnZNSwIcTTe8Hhbg35N2o6dFtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435627180433:android:954b2663a718ea5f68da30",
+        "android_client_info": {
+          "package_name": "com.example.application.internshipproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpsVt1rgnZNSwIcTTe8Hhbg35N2o6dFtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435627180433:android:a290415d1f8ac66f68da30",
+        "android_client_info": {
+          "package_name": "com.example.application.internshipproject2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpsVt1rgnZNSwIcTTe8Hhbg35N2o6dFtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

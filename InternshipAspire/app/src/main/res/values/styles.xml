@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomAlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- Customize the background color -->
+        <item name="android:background">#04AA6D</item>
+
+
+    </style>
+
+</resources>

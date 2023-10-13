@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="17dp"
+    android:background="@drawable/background"
+    android:id="@+id/rootLayout"
+
+    >
+
+    <TextView
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+
+        />
+
+    <TextView
+        android:id="@+id/warningTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type your name"
+        android:visibility="gone"
+        android:textColor="@color/tomato"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <!-- First Name EditText -->
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="First Name"
+            android:id="@+id/edtTxtFirstName" />
+
+        <!-- Last Name EditText -->
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Last Name"
+            android:id="@+id/edtTxtLastName" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warningTxtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type your age"
+        android:visibility="gone"
+        android:textColor="@color/tomato"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="15dp" />
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:hint="Type your age"
+            android:id="@+id/edtAge"
+            />
+
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupGender"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/gender"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="Male"
+            android:checked="true"
+            android:layout_marginRight="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="Female"
+            android:checked="false"
+            android:layout_marginRight="5dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other"
+            android:text="Other"
+            android:checked="false"
+            android:layout_marginRight="5dp"
+            />
+
+    </RadioGroup>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordAgain"
+            android:hint="Re-enter password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/license"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree"
+        android:checked="false"
+        android:id="@+id/agreeCheckBox"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:background ="@drawable/button_color"
+            app:backgroundTint="@null"
+
+
+
+            />
+
+        <Button
+            android:id="@+id/loginNow"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:background ="@drawable/button_color"
+            app:backgroundTint="@null"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
