@@ -1,76 +1,166 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body div.contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body div.contact-heading h1 {
+    font-family: "Dancing Script", cursive;
+    color: coral;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #current-date {
+    font-size: 0.9em;
+  }
+
+  body div.contact-content p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
+
+  div.container {
+    padding: 50px;
+    background-color: #ebb8b8;
+    height: 70vh;
+  }
+
+  label {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 1em;
+  }
+
+  textarea::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(245, 133, 5);
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: 2px solid rgb(245, 133, 5);
+    font-size: 1.2em;
+  }
+
+  input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(245, 133, 5);
+  }
+
+  #confirmation-message {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "Dancing Script", cursive;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+  }
 }
 
-body div.contact-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* Large devices (laptops/desktops, 992px and up) */
 
-body div.contact-heading h1 {
-  font-family: "Dancing Script", cursive;
-  color: coral;
-  font-size: 2.5em;
-  margin-top: 50px;
-}
+@media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body div.contact-content p {
-  text-align: right;
-  margin-right: 20px;
-  font-size: 1.5em;
-}
+  body div.contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-div.container {
-  padding: 70px;
-  background-color: #ebb8b8;
-  height: 70 vh;
-}
+  body div.contact-heading h1 {
+    font-family: "Dancing Script", cursive;
+    color: coral;
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
 
-label {
-  font-size: 1.5em;
-  font-weight: bold;
-}
+  body div.contact-content p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
 
-input[type="text"],
-textarea {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  resize: vertical;
-  font-size: 1.5em;
-}
+  div.container {
+    padding: 70px;
+    background-color: #ebb8b8;
+    height: 70vh;
+  }
 
-textarea::placeholder {
-  color: #999;
-  font-style: italic;
-  font-size: 1.5em;
-}
+  label {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 
-input[type="submit"] {
-  background-color: rgb(245, 133, 5);
-  width: 250px;
-  height: 70px;
-  color: white;
-  border: 2px solid rgb(245, 133, 5);
-  font-size: 1.5em;
-}
+  input[type="text"],
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 1.5em;
+  }
 
-input[type="submit"]:hover {
-  background-color: white;
-  color: rgb(245, 133, 5);
-}
+  textarea::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 1.5em;
+  }
 
-#confirmation-message {
-  display: inline-block;
-  margin-left: 20px;
-  font-family: "Dancing Script", cursive;
-  color: red;
-  font-weight: bold;
-  font-size: 2em;
+  input[type="submit"] {
+    background-color: rgb(245, 133, 5);
+    width: 250px;
+    height: 70px;
+    color: white;
+    border: 2px solid rgb(245, 133, 5);
+    font-size: 1.5em;
+  }
+
+  input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(245, 133, 5);
+  }
+
+  #confirmation-message {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "Dancing Script", cursive;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+  }
 }

@@ -3,10 +3,7 @@
   <head>
     <title>Nabi Cafe</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="cafe_main.css" />
     <link
       rel="stylesheet"
@@ -23,7 +20,7 @@
     <header>
       <nav class="horizontalNavigation">
         <div class="logo">
-          <img src="logo.jpg" alt="logo" width="75px" />
+          <img src="logo.jpg" alt="logo" />
         </div>
         <div class="center">
           <ul>
@@ -44,11 +41,7 @@
           <p id="cafe-description">
             Welcome to Nabi Cafe, where every visit is a journey into comfort,
             coffee, and community. Our cozy cafe is more than just a place to
-            enjoy a cup of coffee; it's a haven where delightful moments come to
-            life. Indulge in our carefully crafted coffee creations, savor
-            delectable pastries, and explore our diverse menu that caters to all
-            tastes. At Nabi Cafe, we believe in the magic of coffee to bring
-            people together and create unforgettable memories.
+            enjoy a cup of coffee
           </p>
           <a href="cafe_menu.html"><span id="menu-button">Menu</span></a>
         </div>
@@ -80,7 +73,7 @@
       <div class="mySlides fade">
         <img src="cafe5.jpeg" />
         <div class="text">
-          <p id="cafe-description2">
+          <p id="cafe-description3">
             Our commitment to excellence extends beyond coffee, as we handcraft
             a delectable array of desserts to satisfy your sweet cravings. From
             indulgent cakes to mouthwatering pastries, each dessert is created
@@ -189,7 +182,7 @@
           slideIndex = 1;
         }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 20000); // Change image every 5 seconds
+        setTimeout(showSlides, 5000);
       }
 
       var currentHour = new Date().getHours();
