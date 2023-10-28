@@ -34,7 +34,7 @@
   div.container {
     padding: 50px;
     background-color: #ebb8b8;
-    height: 70vh;
+    height: 80vh;
   }
 
   label {
@@ -84,6 +84,8 @@
   }
 }
 
+ 
+
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
@@ -115,7 +117,7 @@
   div.container {
     padding: 70px;
     background-color: #ebb8b8;
-    height: 70vh;
+    height: 80vh;
   }
 
   label {
@@ -163,4 +165,6 @@
     font-weight: bold;
     font-size: 2em;
   }
+
+
 }
