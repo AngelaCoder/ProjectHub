@@ -1,0 +1,561 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: white; /* Add a background color if needed */
+    z-index: 1000;
+  }
+
+  #phone {
+    color: rgb(9, 153, 9);
+    margin-right: 5px;
+    margin-bottom: 4px;
+    font-size: 0.5em;
+  }
+
+  nav.horizontalNavigation ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav.horizontalNavigation li {
+    padding: 20px 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav.horizontalNavigation li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #3e3d3d; /* Dark gray color for better readability */
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  nav.horizontalNavigation li a:hover {
+    cursor: pointer;
+    color: rgb(17, 144, 234);
+    text-decoration: none;
+  }
+
+  .center img {
+    display: none;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background: linear-gradient(to bottom right, #ffb6c1, #ff6347);
+    }
+    25% {
+      background: linear-gradient(to bottom right, #9adada, #84d784);
+    }
+    50% {
+      background: linear-gradient(to bottom right, #9aff6b, #58badb);
+    }
+    75% {
+      background: linear-gradient(to bottom right, #73b1cd, #4bd9de);
+    }
+    100% {
+      background: linear-gradient(to bottom right, #ffa07a, #ff6347);
+    }
+  }
+
+  #appointment {
+    display: block;
+
+    background: linear-gradient(
+      to right,
+      #0472b7 0%,
+      #0b9ae2 50%,
+      #1f6bc3 100%
+    );
+
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+
+    margin-left: 5px;
+    padding: 3px 10px;
+    color: white;
+    z-index: 1;
+
+    /* animation: colorChange 10s infinite alternate;  */
+  }
+
+  #appointment:hover {
+    /* opacity: 0.8;
+    transform: scale(1.1);
+    transition: 1s; */
+
+    background-position: left bottom;
+    cursor: pointer;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1900px; /*Changes the size of slide images */
+    max-height: 1600px;
+    position: relative;
+
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 1.5em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  table {
+    margin-top: 25px;
+
+    border: solid 1px rgb(111, 108, 108);
+    border-collapse: collapse;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+
+  #opening-hours {
+    padding: 5px 0;
+    color: white;
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  th,
+  td {
+    border: 1px solid rgb(131, 122, 122);
+
+    vertical-align: top;
+    padding: 5px 11px;
+    font-size: 1em;
+  }
+  .day-of-week {
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    color: white;
+    font-size: 1em;
+  }
+
+  td {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  footer {
+    margin-top: auto;
+
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, #126dd6, #0b9ae2);
+    text-align: center;
+
+    padding: 10px 0;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #copyright {
+    margin-top: 30px;
+  }
+
+  #address {
+    width: 150px;
+
+    color: white;
+  }
+  #address h3 {
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  #address p {
+    font-size: 1em;
+  }
+
+  .social-media h3 {
+    font-size: 0.8em;
+    color: white;
+  }
+
+  .social-media a {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  #social-media-icons i {
+    padding: 3px 3px;
+    font-size: 1.1em;
+  }
+
+  #copyright {
+    color: white;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .email h2 {
+    font-size: 0.8em;
+    color: white;
+  }
+
+  .email a {
+    color: white;
+    font-size: 0.8em;
+  }
+}
+
+/*
+ //////////////////////////////////////////////////////////////////////
+*/
+
+@media only screen and (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white; /* Add a background color if needed */
+    z-index: 1000;
+  }
+
+  #phone {
+    color: rgb(9, 153, 9);
+    margin-right: 5px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+  }
+
+  .header-nav {
+    display: inline-block;
+  }
+
+  nav.horizontalNavigation ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav.horizontalNavigation li {
+    padding: 10px 25px 20px 25px;
+    margin-left: 10px;
+  }
+
+  nav.horizontalNavigation li a {
+    font-size: 1.9em;
+    text-decoration: none;
+    color: #3e3d3d; /* Dark gray color for better readability */
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  nav.horizontalNavigation li a:hover {
+    cursor: pointer;
+    color: rgb(17, 144, 234);
+    text-decoration: none;
+  }
+
+  .center img {
+    width: 200px;
+    height: auto;
+    margin-left: 90px;
+  }
+  @keyframes colorChange {
+    0% {
+      background: linear-gradient(to bottom right, #ffb6c1, #ff6347);
+    }
+    25% {
+      background: linear-gradient(to bottom right, #9adada, #84d784);
+    }
+    50% {
+      background: linear-gradient(to bottom right, #9aff6b, #58badb);
+    }
+    75% {
+      background: linear-gradient(to bottom right, #73b1cd, #4bd9de);
+    }
+    100% {
+      background: linear-gradient(to bottom right, #ffa07a, #ff6347);
+    }
+  }
+
+  #appointment {
+    display: block;
+
+    background: linear-gradient(
+      to right,
+      #0472b7 0%,
+      #0b9ae2 50%,
+      #1f6bc3 100%
+    );
+
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+
+    padding: 10px 25px;
+    color: white;
+    z-index: 1;
+
+    /* animation: colorChange 10s infinite alternate; */
+  }
+
+  #appointment:hover {
+    /* opacity: 0.8;
+    transform: scale(1.1);
+    transition: 1s; */
+
+    background-position: left bottom;
+    cursor: pointer;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1900px; /*Changes the size of slide images */
+    max-height: 1600px;
+    position: relative;
+
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 3em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) * (USE THIS TO ADD CAPTIONS) /
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ 
+
+/* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  table {
+    margin-top: 50px;
+
+    border: solid 1px rgb(111, 108, 108);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+
+  #opening-hours {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  th,
+  td {
+    border: 1px solid rgb(131, 122, 122);
+
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 1.5em;
+  }
+  .day-of-week {
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    color: white;
+    font-size: 1.3em;
+  }
+
+  td {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, #126dd6, #0b9ae2);
+    text-align: center;
+
+    padding: 30px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #copyright {
+    margin-top: 30px;
+  }
+
+  #address {
+    width: 400px;
+
+    color: white;
+  }
+  #address h3 {
+    font-size: 2em;
+    top: 10%;
+    padding-bottom: 5px;
+  }
+  #address p {
+    font-size: 1.7em;
+  }
+
+  .social-media h3 {
+    font-size: 2em;
+    color: white;
+  }
+
+  .social-media a {
+    color: white;
+    font-size: 1.8em;
+  }
+
+  #social-media-icons i {
+    padding: 15px 15px;
+    font-size: 1.3em;
+  }
+
+  #copyright {
+    color: white;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .email h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .email a {
+    color: white;
+    font-size: 1.8em;
+    padding-left: 1rem;
+  }
+}

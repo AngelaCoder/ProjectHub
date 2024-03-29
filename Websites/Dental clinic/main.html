@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HealthyBite Dental</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="horizontalNavigation">
+        <div class="center">
+          <ul>
+            <img src="logo.png" alt="logo" />
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <i class="fa-solid fa-phone" id="phone"></i
+              ><a href="tel:123-000-000-xxx">123-000-000-xxx</a>
+            </li>
+            <li>
+              <a href="#"
+                ><span id="appointment">Schedule An Appointment</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="slide1.jpg" style="width: 100%" />
+          <div class="text">
+            <h3>Meet the professionals</h3>
+            <br />
+            <p>
+              Our team of dental professionals is committed to your oral health
+              and radiant smiles.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="slide5.jpg" style="width: 100%" />
+          <div class="text">
+            <h3 id="txt">Caring Hands, Compassionate Hearts</h3>
+            <br />
+            <p id="txt">
+              Discover the warmth and expertise that define our dental care
+              approach.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="slide3.jpg" style="width: 100%" />
+          <div class="text">
+            <h3>Experience Excellence in Dental Care</h3>
+            <br />
+            <p>
+              Our skilled dentists are dedicated to providing top-notch care
+              with a gentle touch.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="slide4.jpg" style="width: 100%" />
+          <div class="text">
+            <h3>Your Smile, Our Priority</h3>
+            <br />
+            <p>
+              Meet the professionals who go above and beyond to ensure your
+              comfort and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="schedule">
+        <h3 id="opening-hours">Opening &nbsp; Hours</h3>
+        <table>
+          <tr class="day-of-week">
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td>Closed</td>
+            <td>9a.m - 6p.m</td>
+            <td>9a.m - 6p.m</td>
+            <td>9a.m - 6p.m</td>
+            <td>9a.m - 6p.m</td>
+            <td>9a.m - 7p.m</td>
+            <td>Closed</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div id="address">
+          <h3>Address</h3>
+          <br />
+          <p>HealthyBite Dental Clinic 123 Smile Street Dentaltown, DT 12345</p>
+        </div>
+        <div class="social-media">
+          <h3>Stay Connected</h3>
+          <br />
+          <div id="social-media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="email-section">
+          <div class="email">
+            <h2>Email Us</h2>
+            <br />
+            <a href="mailto:healthybitedental@example.com"
+              >healthybitedental@example.com</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p id="copyright">
+        &copy; 2023 HealthyBite Dental Clinic, All Rights Reserved. Designed by
+        Angela Kim
+      </p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+  }
+</script>

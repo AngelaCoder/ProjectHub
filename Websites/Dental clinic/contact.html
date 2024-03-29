@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HealthyBite Dental</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="horizontalNavigation">
+        <div class="center">
+          <ul>
+            <img src="logo.png" alt="logo" />
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <i class="fa-solid fa-phone" id="phone"></i
+              ><a href="tel:123-000-000-xxx">123-000-000-xxx</a>
+            </li>
+            <li>
+              <a href="#"
+                ><span id="appointment">Schedule An Appointment</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <img src="contact3.jpg" />
+      <p>
+        We would love to hear from you!<br />
+        We'll get back to you as soon as possible.
+      </p>
+      <span><h1>Contact Us</h1></span>
+
+      <div id="time"></div>
+      <br />
+
+      <div class="form-container">
+        <form action="https://example.com/submit-form" method="post">
+          <label for="name">YOUR NAME (REQUIRED)</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="FULL NAME"
+          /><br />
+
+          <label for="email">YOUR EMAIL (REQUIRED)</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            placeholder="EMAIL"
+          /><br />
+
+          <label for="comments">COMMENTS/QUESTIONS</label><br />
+          <textarea
+            type="text"
+            id="comments"
+            name="comments"
+            placeholder="COMMENTS/QUESTIONS"
+            required
+            style="height: 400px; width: 600px"
+          ></textarea>
+
+          <br />
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+
+      <div class="audio-container">
+        <audio controls autoplay>
+          <source src="music.ogg" type="audio/ogg" />
+          <source src="music.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div id="address">
+          <h3>Address</h3>
+          <br />
+          <p>HealthyBite Dental Clinic 123 Smile Street Dentaltown, DT 12345</p>
+        </div>
+        <div class="social-media">
+          <h3>Stay Connected</h3>
+          <br />
+          <div id="social-media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="email-section">
+          <div class="email">
+            <h2>Email Us</h2>
+            <br />
+            <a href="mailto:healthybitedental@example.com"
+              >healthybitedental@example.com</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p id="copyright">
+        &copy; 2023 HealthyBite Dental Clinic, All Rights Reserved. Designed by
+        Angela Kim
+      </p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  const d = new Date();
+  document.getElementById("time").innerHTML = d;
+
+  window.onload = function () {
+    document.forms[0].onsubmit = function () {
+      if (this.checkValidity()) {
+        alert("Form Submitted");
+        return false;
+      }
+    };
+  };
+</script>

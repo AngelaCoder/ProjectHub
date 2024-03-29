@@ -1,0 +1,172 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  span > h1 {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    position: relative;
+    left: 40%;
+    width: 200px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .dentists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .dentists img {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+  }
+  .dentist-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 233, 230);
+    max-width: 800px;
+  }
+
+  #dentist-name {
+    font-size: 1rem;
+  }
+
+  .introduction {
+    flex-grow: 1;
+  }
+
+  .introduction-container {
+    margin-left: 100px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .introduction-container h1 {
+    text-align: center;
+  }
+
+  #introduction {
+    font-size: 0.8rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .external-link {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 3em;
+  }
+
+  .external-link p {
+    font-size: 1rem;
+  }
+
+  .external-link a {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+}
+
+/*
+ //////////////////////////////////////////////////////////////////////
+*/
+
+@media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    margin-top: 80px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  span > h1 {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #5abcf0, #0b9ae2);
+    position: relative;
+    left: 42%;
+    width: 400px;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .dentists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .dentists img {
+    height: 600px;
+    width: 500px;
+    border-radius: 8px;
+  }
+  .dentist-card {
+    margin-left: 100px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 233, 230);
+    max-width: 1500px;
+  }
+
+  .introduction {
+    flex-grow: 1;
+  }
+
+  .introduction-container {
+    margin-left: 100px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .introduction-container h1 {
+    text-align: center;
+  }
+
+  #introduction {
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .external-link {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 3em;
+  }
+
+  .external-link p {
+    font-size: 2rem;
+  }
+
+  .external-link a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}
